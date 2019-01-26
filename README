@@ -1,0 +1,25 @@
+This repo demonstrates visualization of STL files (generated in topology optimization)
+using WebGL and WebVR. To view the examples, you will have to run an http server locally. Use the following for python2:
+
+python -m SimpleHTTPServer
+
+and the following command for python3:
+
+python -m http.server
+
+(These default to using port 8000). Then in your web browser navigate to the local address:
+
+http://localhost:8000
+
+Then navigate to webgl_stl.html to view the stl file.
+
+For the VR example, you have to use the web browser in whatever VR system you're using to navigate to the file. One way is to use the same http server above. This can be done by using the following command from the command line.
+
+(for OSX): ifconfig en0
+
+Then use the address (say 192.168.1.64) with the local host in the VR system:
+
+http://192.168.1.64:8000
+
+I found that I had to turn off/on the wifi on my MacBook to get this to work.
+
